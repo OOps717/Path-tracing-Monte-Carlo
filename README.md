@@ -38,9 +38,9 @@ If you check lock the interface will freeze and the images will accumulate (and 
 
 ## Images
 
-* Phase 1:
+Phase 1:
 <img width="964" alt="jarray reverse exampl" src="https://github.com/OOps717/Path-tracing-Monte-Carlo/blob/master/Images/Screenshot%20from%202022-01-03%2011-20-08.png">
-* Phase 2:
+Phase 2:
 <img width="964" alt="jarray reverse exampl" src="https://github.com/OOps717/Path-tracing-Monte-Carlo/blob/master/Images/Screenshot%20from%202022-01-03%2011-20-36.png">
-* Phase 3:
+Phase 3:
 <img width="964" alt="jarray reverse exampl" src="https://github.com/OOps717/Path-tracing-Monte-Carlo/blob/master/Images/Screenshot%20from%202022-01-03%2011-21-06.png">
