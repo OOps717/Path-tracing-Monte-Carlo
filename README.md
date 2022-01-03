@@ -1,6 +1,10 @@
-# EasyCppOGL
+# Monte-Carlo path-tracing
+A project on implementation of path-tracing Monte Carlo method with GLSL using EasyCppOGL library. This project consists of 3 phases of implementation:
+* Illumination of objects in the scene without transparency or reflections
+* Illumination of objects in the scene with reflections
+* Illumination of objects in the scene with reflections and transparency
 
-## Compilation
+## EasyCppOGL
 
 ### Dependencies
 
@@ -8,23 +12,26 @@
 * glfw3
 * assimp
 
-#### Linux
+## Build
 
-#### Windows
+The project was built on an Ubuntu system. To build requires running the following commands in the project directory:
+```
+mkdir build ; cd build
+cmake ..
+make -j 8
+```
 
-	Use vckpg
-	Use triplet x64-windows (var env: VCPKG_DEFAULT_TRIPLET=x64-windows)
+To launch the program, go to the MontecarloGPU directory in the build directory and run the command ```./MontecarloGPU```.
 
-	Use cmake-gui version:
-	Generator Visual Studio 15 2017
-	Optional platform: x64
-	Specificy toolchain file : C:\VCPKG\scripts\buildsystems\vcpkg.cmake
-	or by command line
-		cmake.exe ..\easycppogl\ -DCMAKE_GENERATOR_PLATFORM=x64 -DCMAKE_TOOLCHAIN_FILE="C:\VCPKG\scripts\buildsystems\vcpkg.cmake"
+## Usage
 
-	For QtCreator
-	* add dir of jom.exe in path var (it is in QtCreator/bin)
-	* launch VS Tool x64 command shell 
-	* create build dir and go into.
-	* cmake.exe ..\easycppogl\ -DCMAKE_TOOLCHAIN_FILE="C:/VCPKG/scripts/buildsystems/vcpkg.cmake" -G "NMake Makefiles JOM"
-	* in QtCreator import the build dir
+Testing takes place in already created scenes. To select the scene, press one of the keys Q,W,E,R,T,Y,U,I. The O,P (previous and next) buttons are used to change phases (shader change).
+
+In the menu you can choose: 
+* Subsampling: choose the size of the calculated image 
+* Number of bounces of the path (passed in uniform to the shader) 
+* Number of paths launched in "interactive" mode 
+* K_op: opacity factor
+
+
+If you check lock the interface will freeze and the images will accumulate (and average). If you check freeze, the image is then frozen and the calculations are stopped.
