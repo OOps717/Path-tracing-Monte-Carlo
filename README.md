@@ -1,8 +1,8 @@
 # Monte-Carlo path-tracing
 A project on implementation of path-tracing Monte Carlo method with GLSL using EasyCppOGL library. This project consists of 3 phases of implementation:
-* Illumination of objects in the scene without transparency or reflections
-* Illumination of objects in the scene with reflections
-* Illumination of objects in the scene with reflections and transparency
+* Illumination of objects in the scene without transparency or reflections (Path: ./tp/motecarlo.frag)
+* Illumination of objects in the scene with reflections (Path: ./tp/motecarlo_mat.frag)
+* Illumination of objects in the scene with reflections and transparency (Path: ./tp/motecarlo_mat_tr.frag)
 
 ## EasyCppOGL
 
